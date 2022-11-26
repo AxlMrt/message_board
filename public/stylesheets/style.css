@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 :root {
   --bg: #eff6ff;
   --user: #0f172a;
@@ -16,10 +16,25 @@
 body {
   background: var(--bg);
   padding: 2rem 1rem;
+  font-family: Barlow Semi Condensed;
 }
 
 header {
   text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+button {
+  background: white;
+  border-radius: 1rem;
+  padding: 0.6rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
 }
 
 .content {
@@ -30,7 +45,7 @@ header {
 }
 
 .content > .message {
-  width: 40%;
+  width: 50%;
   background: white;
   margin: 1rem;
   padding: 1rem;
@@ -64,4 +79,16 @@ p, span {
 
 span {
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .content > .message {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content > .message {
+    width: 85%;
+  }
 }
