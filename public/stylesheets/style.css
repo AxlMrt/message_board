@@ -1,8 +1,67 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+:root {
+  --bg: #eff6ff;
+  --user: #0f172a;
+  --text: #737373;
 }
 
-a {
-  color: #00B7FF;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content > .message {
+  width: 40%;
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.new_msg {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+h3 {
+  color: var(--user);
+}
+
+p, span {
+  color: var(--text);
+}
+
+span {
+  font-size: 0.8rem;
 }
