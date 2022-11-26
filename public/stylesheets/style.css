@@ -49,6 +49,7 @@ button {
   background: white;
   margin: 1rem;
   padding: 1rem;
+  border-radius: 0.6rem;
 }
 
 .user {
@@ -67,6 +68,15 @@ form {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+}
+
+input[type=text] {
+  outline: none;
+}
+
+textarea {
+  margin: 1rem;
+  outline: none;
 }
 
 h3 {
